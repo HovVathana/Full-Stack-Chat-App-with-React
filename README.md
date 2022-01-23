@@ -1,7 +1,7 @@
 # Full-Stack-NaNa-Chat-App-with-React
 
 ## General info
-This a chat app that is still a work in progress. Users can only create public rooms.
+This is a chat app that is still a work in progress. Users can sign in with Google authentication and create group chat.
 Try [Live Demo](https://nana-chat-app-e3a7d.web.app/).
 
 ## Features
