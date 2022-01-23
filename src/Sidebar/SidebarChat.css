@@ -1,0 +1,48 @@
+.sidebarChat {
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+  border-top: 1px solid #192734;
+  border-bottom: 1px solid #192734;
+}
+.sidebarChat:hover {
+  background-color: #22303c;
+}
+.sidebarChat__info {
+  width: 80% !important;
+}
+.sidebarChat__info > p,
+h2,
+h3 {
+  margin: 0 0 0 15px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sidebarChat__info > h2 {
+  font-size: 16px;
+}
+.sidebarChat__info > p {
+  color: #8899a6;
+}
+.sideChat__photo {
+  margin: 0 0 0 15px;
+  align-items: center;
+  display: flex;
+}
+.sideChat__photo > .MuiSvgIcon-root {
+  color: #a4a4a4;
+  font-size: 16px;
+}
+.sideChat__photo > span {
+  margin-left: 5px;
+  color: #a4a4a4;
+}
+.sidebarChat__link {
+  text-decoration: none;
+  color: black;
+}
+.sidebarChat > div > h3 {
+  text-align: center;
+}

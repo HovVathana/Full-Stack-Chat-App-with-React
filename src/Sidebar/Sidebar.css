@@ -1,0 +1,101 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3 !important;
+  width: 30vw;
+}
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #15202b;
+  border-right: 1px solid #22303c;
+}
+.sidebar__header > div > .MuiAvatar-root {
+  margin-left: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.sidebar__headerRight {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  min-width: 10vw;
+}
+
+.sidebar__headerRight > h3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: sans-serif;
+  padding-right: 50px;
+  /* padding-left: 10px; */
+}
+
+.sidebar__headerRight > .MuiSvgIcon-root {
+  margin-right: 2vw;
+  font-size: 24px !important;
+}
+.sidebar__chats {
+  background-color: #15202b;
+  flex: 1;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+.sidebar__chats::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.sidebar__chatsContainer_empty_displayNone {
+  display: none;
+}
+.sidebar__chatsContainer_empty {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.sidebar__chatsContainer_empty > span {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 14px;
+}
+.sidebar__chatsContainer_loading {
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.sidebar__chatsContainer_loading > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    flex: 1 !important;
+    width: 100vw;
+    padding-top: 5px;
+    height: 100%;
+    background-color: #15202b;
+  }
+  .sidebar__headerRight {
+    min-width: 40vw;
+  }
+
+  .sidebar__headerRight > h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 580px) and (min-width: 500px) {
+  .sidebar__headerRight > h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding-right: 95px;
+  }
+}

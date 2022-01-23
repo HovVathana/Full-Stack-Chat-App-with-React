@@ -1,0 +1,145 @@
+.login {
+  /* background-color: #f8f8f8; */
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    235deg,
+    #003dfd,
+    #05c7e6,
+    #4bd58d,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3,
+    #fd8800,
+    #fd008f,
+    #9700fd
+  );
+  background-size: 1000% 1000%;
+
+  -webkit-animation: rainbow 20s ease infinite;
+  -z-animation: rainbow 20s ease infinite;
+  -o-animation: rainbow 20s ease infinite;
+  animation: rainbow 20s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+.login__container {
+  padding: 70px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 18px #8899a6, -10px -10px 18px #8899a6;
+}
+.login__container > img {
+  object-fit: contain;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 200px !important;
+}
+
+.login__text {
+  margin-bottom: 60px;
+}
+.login__withGoogle {
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  background-color: white !important;
+}
+.login__withGoogle > img {
+  height: 25px !important;
+  margin-right: 10px;
+}
+.login__Anonymously {
+  margin-top: 10px;
+}
+.login__Anonymously > .MuiSvgIcon-root {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .login__container > img {
+    height: 80px;
+  }
+  .login__container {
+    padding: 30px;
+  }
+  .login__text > h1 {
+    font-size: 20px;
+  }
+  .login__withGoogle > span {
+    font-size: 12px;
+  }
+  .login__withGoogle > img {
+    height: 15px !important;
+    margin-right: 5px;
+  }
+  .login__Anonymously {
+    margin-top: 10px;
+  }
+  .login__Anonymously > .MuiSvgIcon-root {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+}

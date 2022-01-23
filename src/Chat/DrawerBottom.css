@@ -1,0 +1,98 @@
+.drawerBottom__header {
+  background-color: #192734;
+  padding: 10px;
+  border-bottom: 1px solid #22303c;
+}
+.drawerBottom__header_container {
+  display: flex;
+  align-items: center;
+}
+.drawerBottom__header_container > p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.drawerBottom__header_container > .MuiIconButton-root {
+  color: white !important;
+  margin: 0 10px 0 10px;
+}
+.drawerBottom__content {
+  background-color: #22303c;
+  height: 100%;
+}
+.drawerBottom__content_photo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 300px;
+}
+.drawerBottom__content_video {
+  height: 300px;
+  width: 100%;
+}
+.drawerBottom__content_video > .player-wrapper {
+  margin: 0 auto;
+  margin-top: 30px !important;
+}
+.drawerBottom__content_photo > img {
+  height: 244px;
+  margin: 20px 0 20px 0;
+}
+.drawerBottom__content_caption {
+  margin: 20px 120px 20px 120px;
+}
+.drawerBottom__content_caption > .MuiFab-root {
+  position: absolute;
+  right: 45px;
+  bottom: 110px;
+  background-color: #0088a6;
+  color: white;
+}
+.drawerBottom__content_caption > .MuiFab-root:hover {
+  background-color: #192734;
+}
+.drawerBottom__content_caption > input {
+  width: 100%;
+  background-color: #22303c;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #0088cc;
+  padding: 5px 0 5px 0;
+  font-size: 14px;
+  color: white;
+}
+.drawerBottom__footer {
+  align-items: center;
+  align-content: center;
+  /* width: fill; */
+  height: 140px;
+  background-color: #22303c;
+  padding: 20px 50px 20px 50px;
+  text-align: center;
+}
+.drawerBottom__footer > div {
+  align-content: center;
+}
+.drawerBottom__footer > div > img {
+  margin: 0 auto;
+  max-height: 78px;
+}
+
+@media screen and (max-width: 600px) {
+  .drawerBottom__content_photo > img {
+    max-height: 150px;
+    margin: 20px 0 20px 0;
+  }
+  .drawerBottom__content_caption {
+    margin: 20px 40px 20px 20px;
+  }
+  .drawerBottom__content {
+    background-color: #22303c;
+    height: 100vh;
+  }
+  .drawerBottom__footer {
+    height: 140px;
+    padding: 20px 50px 20px 50px;
+  }
+}
